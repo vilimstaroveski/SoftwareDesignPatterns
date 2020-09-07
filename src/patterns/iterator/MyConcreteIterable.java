@@ -1,19 +1,19 @@
-package obrasci.iterator;
+package patterns.iterator;
 
 import java.util.List;
 
 public class MyConcreteIterable implements MyIterable<String> {
 
-	private List<String> lista;
+	private List<String> list;
 	
 	public MyConcreteIterable(List<String> l ) {
 		super();
-		this.lista = l;
+		this.list = l;
 	}
 
 	@Override
-	public MyIterator createIterator() {
-		return new MyConcreteIterator(lista);
+	public MyIterator<String> createIterator() {
+		return new MyConcreteIterator(list);
 	}
 	
 	

@@ -1,13 +1,13 @@
-package obrasci.kompozit;
+package patterns.composite;
 
-public abstract class Komponenta {
+public abstract class Component {
 
 	public abstract void operation();
 	
-	public void add(Komponenta k) {
+	public void add(Component c) {
 		throw new UnsupportedOperationException();
 	}
-	public void remove(Komponenta k) {
+	public void remove(Component c) {
 		throw new UnsupportedOperationException();
 	}
 	

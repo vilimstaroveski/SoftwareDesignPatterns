@@ -1,10 +1,10 @@
-package obrasci.dekorator;
+package patterns.decorator;
 
-public class KonkretnaKomponenta implements Komponenta {
+public class ConcreteComponent implements Component {
 
 	private String data;
 	
-	public KonkretnaKomponenta(String data) {
+	public ConcreteComponent(String data) {
 		super();
 		this.data = data;
 	}	

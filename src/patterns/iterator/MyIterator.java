@@ -1,4 +1,4 @@
-package obrasci.iterator;
+package patterns.iterator;
 
 public interface MyIterator<T> {
 

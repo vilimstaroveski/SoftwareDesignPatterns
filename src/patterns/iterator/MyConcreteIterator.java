@@ -1,25 +1,24 @@
-package obrasci.iterator;
+package patterns.iterator;
 
 import java.util.List;
 
 public class MyConcreteIterator implements MyIterator<String> {
 
-	private List<String> lista;
+	private List<String> list;
 	private int curr = 0;
 	
-	public MyConcreteIterator(List<String> lista) {
-		this.lista = lista;
+	public MyConcreteIterator(List<String> list) {
+		this.list = list;
 	}
 
 	@Override
 	public String next() {
-		return lista.get(curr++);
+		return list.get(curr++);
 	}
-	
 
 	@Override
 	public boolean hasNext() {
-		return curr < lista.size();
+		return curr < list.size();
 	}
 
 }
